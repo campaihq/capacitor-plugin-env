@@ -1,0 +1,25 @@
+{
+  "api": {
+    "name": "CapacitorEnvPlugin",
+    "slug": "capacitorenvplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "get",
+        "signature": "() => Promise<any>",
+        "parameters": [],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "get"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
