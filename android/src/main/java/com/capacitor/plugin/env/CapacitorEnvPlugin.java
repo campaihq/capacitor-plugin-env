@@ -5,9 +5,8 @@ import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
-
-import org.json.JSONObject;
 import java.util.Iterator;
+import org.json.JSONObject;
 
 @CapacitorPlugin(name = "CapacitorEnv")
 public class CapacitorEnvPlugin extends Plugin {
@@ -35,9 +34,9 @@ public class CapacitorEnvPlugin extends Plugin {
                 result.put(key, json.getString(key));
             }
 
-            call.success(result);
+            call.resolve(result);
         } catch (Exception e) {
-            call.error("Error reading CapacitorEnv values: " + e.getMessage());
+            call.reject("Error reading CapacitorEnv values: " + e.getMessage());
         }
     }
 }
